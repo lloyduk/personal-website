@@ -117,3 +117,53 @@ footer {
   margin-top: 48px;
   font-size: 15px;
 }
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navbar a {
+    margin: 8px 0;
+    font-size: 16px;
+  }
+
+  .welcome-msg {
+    font-size: 13px;
+    padding: 0 12px;
+  }
+
+  .person h1 {
+    font-size: 32px;
+  }
+
+  .person p {
+    font-size: 16px;
+    padding: 0 12px;
+  }
+
+  section {
+    padding: 60px 20px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+  }
+
+  .skill img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .skill span {
+    font-size: 14px;
+  }
+
+  footer {
+    padding: 24px;
+    font-size: 14px;
+  }
+}
