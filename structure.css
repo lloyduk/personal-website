@@ -117,35 +117,3 @@ footer {
   margin-top: 48px;
   font-size: 15px;
 }
-/* MOBILE RESPONSIVENESS */
-@media (max-width: 600px) {
-  .navbar ul {
-    flex-direction: row;
-    align-items: center;
-    padding: 12px 0;
-    gap: 10px;
-  }
-
-  .navbar a {
-    font-size: 16px;
-    margin: 6px 0;
-    padding: 8px 16px;
-    background-color: #2a2a2a;
-    border-radius: 6px;
-    display: inline-block;
-    width: 80%;
-    text-align: center;
-  }
-
-  .navbar a:hover {
-    background-color: #444;
-    color: #fff;
-  }
-
-  .welcome-msg {
-    font-size: 14px;
-    margin-top: 10px;
-    padding: 0 16px;
-    line-height: 1.4em;
-  }
-}
