@@ -120,7 +120,7 @@ footer {
 /* MOBILE RESPONSIVENESS */
 @media (max-width: 600px) {
   .navbar ul {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding: 12px 0;
     gap: 10px;
