@@ -14,14 +14,19 @@
   </head>
   <body>
     <nav class="navbar">
-      <ul>
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#skills">SKILLS</a></li>
-        <li><a href="https://docs.google.com/document/d/1QUJnm7aeuT43kxH-GR7coWocJJfm8UPjEU67sW4dkt0/edit?tab=t.0" target="_blank">RESUME</a></li>
-        <li><a href="#projects">PROJECTS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
+      <button class="hamburger" onclick="toggleMenu()">
+      &#9776; <!-- Unicode for ☰ -->
+      </button>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="https://docs.google.com/document/d/1QUJnm7aeuT43kxH-GR7coWocJJfm8UPjEU67sW4dkt0/edit?tab=t.0" target="_blank">RESUME</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
       <p class="welcome-msg">Hello there, thanks for visiting my website! I would love to connect with you :)</p>
     </nav>
 
@@ -86,9 +91,13 @@
       </p>
 
     </section>
-
     <footer>
       <p>&copy; 2025 Lloyd Ugwu</p>
     </footer>
+    <script>
+      function toggleMenu() {
+        document.querySelector('.nav-links').classList.toggle('active');
+      }
+    </script>
   </body>
 </html>

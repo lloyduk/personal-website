@@ -130,23 +130,50 @@ section {
   max-width: 960px;
   margin: auto;
 }
-/*
-@media (max-width: 600px) {
+
+.hamburger {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: #ccc;
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    background: #111;
+    width: 100%;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
   .navbar ul {
-    flex-wrap: wrap;
-    padding: 0 10px;
-    row-gap: 8px;
-    column-gap: 10px;
+    flex-direction: column;
+    margin: 0;
   }
 
   .navbar a {
-    font-size: 13px;
-    padding: 6px 8px;
-  }
-
-  .welcome-msg {
-    font-size: 13px;
-    padding: 4px 10px;
+    margin: 10px 0;
   }
 }
-*/
